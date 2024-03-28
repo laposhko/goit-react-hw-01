@@ -1,0 +1,19 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  align-items: center;
+  border: black 2px solid;
+  width: 100px;
+  border-radius: 10px;
+  gap: 8px;
+}
+.online {
+  color: green;
+}
+.offline {
+  color: red;
+}
+.name {
+  font-size: 20px;
+}
