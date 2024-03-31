@@ -1,4 +1,3 @@
-import Transaction from "../Transaction/Transaction";
 import css from "./TransactionHistory.module.css";
 export default function TransactionHistory({ transactions }) {
   return (
@@ -14,7 +13,9 @@ export default function TransactionHistory({ transactions }) {
       <tbody>
         {transactions.map((transaction) => (
           <tr key={transaction.id}>
-            <Transaction transaction={transaction} />
+            <td className={css.data}>{transaction.type}</td>
+            <td className={css.data}>{transaction.amount}</td>
+            <td className={css.data}>{transaction.currency}</td>
           </tr>
         ))}
       </tbody>

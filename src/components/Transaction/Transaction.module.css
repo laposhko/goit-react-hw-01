@@ -1,7 +1,0 @@
-.data {
-  border: 0.5px black solid;
-  text-align: center;
-}
-.data::first-letter {
-  text-transform: uppercase;
-}
